@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.navBoxShadow{
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+
+.nav{
+    height: 50px;
+    align-items: center;
+    margin: 0 80px;
+    
+}
+
+.nav .navbox1{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navImg img{
+    border-radius: 50%;
+}
+.iconsLogo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.iconsLogo .fa-bars{
+    font-size: 19px;
+    display: none;
+}
+  
+.navigation a{
+    padding-right: 20px;
+    color: gray;
+    transition:  all 0.2s;
+    font-weight: 600;
+
+}
+.navigation a:hover{
+    color: black;
+    font-weight: 600;
+}
+
+.marginOfBody{
+    /* width: 100%; */
+  
+    
+    
+}
+.content{
+    padding-left: 180px;
+    padding-top: 50px;
+   /* margin: 50px 0 50px 180px; */
+}
+.content h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    /* padding-bottom: 20px; */
+}
+.content p{
+    line-height: 25px;
+    color: gray;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+
+
+
+.row{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    /* align-items: center; */
+}
+
+.container{
+    width: 100%;
+}
+
+.column{
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    border-radius: 10px;
+    
+    
+}
+
+.column1{
+    background-image: url(./finalcoffe.jpg);
+    flex: 40%;
+    max-width: 40%;
+
+
+}
+
+
+
+
+.column2{
+    background-image: url(./whitecoffee.webp);
+    background-position: center center;
+    flex: 19%;
+    max-width: 19%;
+  
+    /* margin-bottom: 60px; */
+  
+
+}
+.column1 .gradient{
+    border-radius: 10px;
+   width: 100%;
+   height: 100%;
+   background: rgb(78,129,128);
+   background: linear-gradient(125deg, rgba(78,129,128,1) 10%, rgba(173,213,212,0.1) 100%);
+   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+   }
+.column2 .gradient{
+ border-radius: 10px;
+
+width: 100%;
+height: 100%;
+background: rgb(78,129,128);
+background: linear-gradient(125deg, rgba(78,129,128,1) 10%, rgba(173,213,212,0.1) 100%);
+box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+
+
+
+.col2{
+    background-image: url(./building.avif);
+}
+
+.col2 .gradient{
+    background: unset;
+   }
+
+.col3{
+    background-image: url(./sand.webp);
+}
+
+.col3 .gradient{
+    background: rgb(209,163,69);
+    background: linear-gradient(125deg, rgba(209,163,69,0.7791491596638656) 10%, rgba(89,78,10,0.3113620448179272) 100%);
+}
+
+
+
+
+.gradient  h4{
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 20px;
+    padding-left: 20px; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+.gradient  h1{
+    color: white;
+    font-size: 35px;
+    padding-left: 20px;
+}
+.gradient  button{
+    font-size: 15px;
+   padding: 5px 20px;
+   font-weight: 600;
+   color: rgba(78,129,128,1);
+   border: transparent;
+   border-radius: 5px;
+  
+}
+.gradient  .button{
+   padding-left: 20px;
+   margin-top: 127px;
+}
+
+
+
+.rr{
+    height: 100vh;
+}
+
+
+
+@media(max-width:1175px){
+    .row{
+        width: 100%;
+       flex-direction: column;
+        /* height: 3000px; */
+        height: 100%;
+        /* align-items: center; */
+        flex-wrap: wrap;
+    }
+    .column1{
+        flex: 100%;
+        max-width: 100%;
+        height: 600px;
+    }
+    
+    .column2{  
+        flex: 100%;
+        max-width: 100%;
+        height: 600px;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:1006px){
+    .iconsLogo .fa-bars{
+        display: block;
+    }
+    .navigation a{
+        display: none;
+    }
+
+
+}
+
+
